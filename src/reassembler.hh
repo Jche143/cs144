@@ -6,6 +6,11 @@
 
 class Reassembler
 {
+private:
+const int flag = 100000;
+std::vector<int> box{};
+uint64_t nread = 0, lastpos = -1, store = 0;
+
 public:
   /*
    * Insert a new substring to be reassembled into a ByteStream.
